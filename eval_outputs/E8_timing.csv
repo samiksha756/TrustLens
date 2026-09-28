@@ -1,0 +1,4 @@
+Route,n,mean_s,max_s
+Text (default path),25,0.3,0.65
+Screenshot (OCR),25,1.01,3.25
+Voice note (Whisper),5,7.68,18.5

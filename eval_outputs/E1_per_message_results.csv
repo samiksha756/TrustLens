@@ -1,0 +1,26 @@
+message,category,true,raw_prob,indicators,emotion_available,emotion_dominant,pressure,link_risk,benign_context,default_score,default_level,calibrated_score,calibrated_level,text_seconds
+Your PayPal account has been temporarily restricted due to suspicious ...,account_lock,1,1.0,5,True,fear,0.8488,0.9,0.0,0.9773,High Risk,0.9656,High Risk,0.651
+URGENT: We detected unauthorised access to your Microsoft account. Con...,account_lock,1,1.0,3,True,neutral,0.2067,0.55,0.0,0.806,High Risk,0.7726,High Risk,0.407
+Your Apple ID has been locked. Re-enter your password here to unlock: ...,account_lock,1,1.0,2,True,neutral,0.0931,0.7,0.0,0.714,Suspicious,0.7229,Suspicious,0.305
+Your recent payment of $429.99 has failed. Update your billing informa...,payment_pressure,1,1.0,1,True,neutral,0.1526,0.0,0.0,0.6479,Suspicious,0.5581,Suspicious,0.351
+Final notice: Your unpaid invoice #INV-77321 is overdue. Wire transfer...,payment_pressure,1,0.9999,2,True,sadness,0.1232,0.0,0.0,0.7184,Suspicious,0.6119,Suspicious,0.37
+Your tax refund of £540 is pending. Confirm your bank details urgently...,tax_refund,1,1.0,2,True,neutral,0.2585,0.7,0.0,0.7388,Suspicious,0.7428,Suspicious,0.301
+CONGRATULATIONS! You have been selected to receive a $1000 Amazon gift...,prize_lure,1,1.0,3,True,neutral,0.541,0.0,0.0,0.8561,High Risk,0.7247,Suspicious,0.327
+You won a brand new iPhone 15 Pro! Claim now at free-iphone-winner.xyz,prize_lure,1,1.0,0,True,surprise,0.4177,0.55,0.0,0.6127,Suspicious,0.6179,Suspicious,0.292
+Lucky winner! Your number was drawn in our monthly giveaway. Send your...,prize_lure,1,1.0,0,True,joy,0.1861,0.0,0.0,0.5779,Suspicious,0.5021,Suspicious,0.296
+Your DHL parcel could not be delivered. Pay the £2.99 redelivery fee a...,delivery_scam,1,1.0,1,True,sadness,0.0723,0.7,0.0,0.6358,Suspicious,0.6604,Suspicious,0.342
+FedEx: Your package is being held at customs. Confirm details at fedex...,delivery_scam,1,0.9918,1,True,neutral,0.0932,0.7,0.0,0.6345,Suspicious,0.6319,Suspicious,0.31
+Netflix: Your subscription payment failed. Update your card now: http:...,brand_impersonation,1,1.0,2,True,sadness,0.1184,0.7,0.0,0.7178,Suspicious,0.726,Suspicious,0.264
+Singpass alert: Suspicious login detected. Verify your identity at sin...,brand_impersonation,1,1.0,2,True,fear,0.9453,0.7,0.0,0.8418,High Risk,0.8252,High Risk,0.283
+"Hi mum, just letting you know I'll be home for dinner tonight. See you...",benign,0,0.0,0,True,joy,0.057,0.0,0.0,0.0086,Safe,0.0071,Safe,0.265
+"Hey, are we still on for coffee tomorrow at 10? Let me know if you nee...",benign,0,0.0,0,True,neutral,0.1081,0.0,0.0,0.0162,Safe,0.0132,Safe,0.281
+"Thanks for sending over the notes from yesterday's lecture, really app...",benign,0,0.0,0,True,joy,0.0763,0.0,0.0,0.0114,Safe,0.0094,Safe,0.232
+Your Amazon order #404-1234567-8901234 has shipped and will arrive on ...,benign,0,0.9956,1,True,neutral,0.0726,0.0,0.5,0.6335,Suspicious,0.4341,Caution,0.291
+Your appointment with Dr. Lim is confirmed for 3 March at 2:30 PM.,benign,0,0.0,0,True,neutral,0.1225,0.0,0.2,0.0184,Safe,0.0139,Safe,0.249
+Your monthly bank statement is ready to view in the app.,benign,0,0.0002,0,True,neutral,0.0392,0.0,0.0,0.006,Safe,0.0089,Safe,0.279
+New collection just dropped! Browse the latest arrivals at our store t...,benign,0,0.9685,0,True,surprise,0.4909,0.0,0.0,0.6063,Suspicious,0.4767,Caution,0.235
+Don't forget — your local library has a free reading event this Saturd...,benign,0,0.0004,0,True,joy,0.1908,0.0,0.0,0.0288,Safe,0.029,Safe,0.234
+Please review the attached report by end of week and share your feedba...,benign,0,0.0,0,True,neutral,0.0303,0.0,0.0,0.0045,Safe,0.0039,Safe,0.237
+The team meeting has been moved to 11am tomorrow. Calendar invite to f...,benign,0,0.0,0,True,neutral,0.1251,0.0,0.0,0.0188,Safe,0.0153,Safe,0.231
+Just a reminder that your gym membership payment is due next week. You...,benign_tricky,0,0.0,0,True,neutral,0.043,0.0,0.0,0.0064,Safe,0.0054,Safe,0.31
+Your password to the office Wi-Fi has been updated. Please ask IT if y...,benign_tricky,0,0.0,0,True,neutral,0.0614,0.0,0.0,0.0092,Safe,0.0076,Safe,0.265

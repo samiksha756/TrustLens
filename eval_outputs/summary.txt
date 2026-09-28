@@ -1,0 +1,74 @@
+Machine: macOS-15.7.9-x86_64-i386-64bit | Python 3.12.2
+======================================================================
+E1-E4  Text route on the 25-message test set (live models)
+======================================================================
+First call (includes model loading): 31.3 s
+
+E1  Detection metrics (Suspicious/High Risk counted as 'phishing')
+      Path  TP  TN  FP  FN  Accuracy  Precision  Recall    F1   FPR
+   Default  13  10   2   0      0.92      0.867     1.0 0.929 0.167
+Calibrated  13  12   0   0      1.00      1.000     1.0 1.000 0.000
+
+E2  Correct per category
+           category  n  default_correct  calibrated_correct
+       account_lock  3                3                   3
+             benign 10                8                  10
+      benign_tricky  2                2                   2
+brand_impersonation  2                2                   2
+      delivery_scam  2                2                   2
+   payment_pressure  2                2                   2
+         prize_lure  3                3                   3
+         tax_refund  1                1                   1
+
+Messages misclassified on at least one path:
+  [benign] default=Suspicious calibrated=Caution p=0.9956 | Your Amazon order #404-1234567-8901234 has shipped and will arrive on ...
+  [benign] default=Suspicious calibrated=Caution p=0.9685 | New collection just dropped! Browse the latest arrivals at our store t...
+
+E3  Saturation: 96% of classifier outputs are <=0.02 or >=0.98
+ Temperature                           Note    ECE  Brier
+         1.0               raw (no scaling) 0.0783 0.0772
+         1.8              TrustLens default 0.0709 0.0668
+         3.4 fitted on this set (in-sample) 0.0767 0.0516
+
+E4  Mean emotional pressure: phishing 0.312 | benign 0.118 | gap +0.194
+    Dominant emotion counts (phishing): {'neutral': 6, 'sadness': 3, 'fear': 2, 'surprise': 1, 'joy': 1}
+
+======================================================================
+E5  Fusion-weight sensitivity (default path, recorded live values)
+======================================================================
+ classifier_weight  indicator_weight  Recall   FPR  Accuracy  FP  FN
+              0.40              0.45   0.846 0.083      0.88   1   2
+              0.45              0.40   0.923 0.167      0.88   2   1
+              0.50              0.35   1.000 0.167      0.92   2   0
+              0.55              0.30   1.000 0.167      0.92   2   0
+              0.60              0.25   1.000 0.167      0.92   2   0
+              0.65              0.20   1.000 0.167      0.92   2   0
+              0.70              0.15   1.000 0.167      0.92   2   0
+              0.75              0.10   1.000 0.167      0.92   2   0
+              0.80              0.05   1.000 0.167      0.92   2   0
+
+======================================================================
+E6  OCR accuracy and screenshot-route consistency
+======================================================================
+Images analysed: 25  | mean CER 0.002 | mean WER 0.019 | max CER 0.011
+Same risk level as the text route: 25/25
+Mean time per screenshot: 1.01 s
+
+======================================================================
+E7  Whisper word error rate on recorded voice notes
+======================================================================
+Voice notes: 5 | mean WER 0.079 | max WER 0.172
+Same risk level as reading the reference as text: 5/5
+Mean time per voice note: 7.68 s
+  msg01.m4a: WER 0.06 | heard: Hi, your people account has been locked. Verify your password immediately or you
+  msg02.m4a: WER 0.17 | heard: Hello, this is the tax office. You have a pending refund of $480. So please repl
+  msg04.m4a: WER 0.07 | heard: Hi mom, I will be home for dinner at 7 tonight. See you later.
+  msg05.m4a: WER 0.09 | heard: Hi, so the team meeting has been moved to 11 a.m. tomorrow morning, so I will be
+
+======================================================================
+E8  Processing time per route (models already loaded)
+======================================================================
+               Route  n  mean_s  max_s
+ Text (default path) 25    0.30   0.65
+    Screenshot (OCR) 25    1.01   3.25
+Voice note (Whisper)  5    7.68  18.50

@@ -1,0 +1,9 @@
+category,n,default_correct,calibrated_correct
+account_lock,3,3,3
+benign,10,8,10
+benign_tricky,2,2,2
+brand_impersonation,2,2,2
+delivery_scam,2,2,2
+payment_pressure,2,2,2
+prize_lure,3,3,3
+tax_refund,1,1,1

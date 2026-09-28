@@ -1,0 +1,26 @@
+source,reference,CER,WER,image_level,text_level,same_level,seconds
+rendered,Your PayPal account has been temporarily restricted due to s,0.0,0.0,High Risk,High Risk,True,2.57
+rendered,URGENT: We detected unauthorised access to your Microsoft ac,0.0,0.0,High Risk,High Risk,True,0.76
+rendered,Your Apple ID has been locked. Re-enter your password here t,0.0097,0.1538,Suspicious,Suspicious,True,0.72
+rendered,Your recent payment of $429.99 has failed. Update your billi,0.007,0.1176,Suspicious,Suspicious,True,1.99
+rendered,Final notice: Your unpaid invoice #INV-77321 is overdue. Wir,0.0,0.0,Suspicious,Suspicious,True,0.76
+rendered,Your tax refund of £540 is pending. Confirm your bank detail,0.0106,0.0714,Suspicious,Suspicious,True,0.7
+rendered,CONGRATULATIONS! You have been selected to receive a $1000 A,0.0,0.0,Suspicious,Suspicious,True,0.82
+rendered,You won a brand new iPhone 15 Pro! Claim now at free-iphone-,0.0,0.0,Suspicious,Suspicious,True,0.66
+rendered,Lucky winner! Your number was drawn in our monthly giveaway.,0.0,0.0,Suspicious,Suspicious,True,0.89
+rendered,Your DHL parcel could not be delivered. Pay the £2.99 redeli,0.0,0.0,Suspicious,Suspicious,True,0.73
+rendered,FedEx: Your package is being held at customs. Confirm detail,0.0103,0.1429,Suspicious,Suspicious,True,1.02
+rendered,Netflix: Your subscription payment failed. Update your card ,0.0,0.0,Suspicious,Suspicious,True,0.79
+rendered,Singpass alert: Suspicious login detected. Verify your ident,0.0,0.0,High Risk,High Risk,True,0.94
+rendered,"Hi mum, just letting you know I'll be home for dinner tonigh",0.0,0.0,Safe,Safe,True,1.11
+rendered,"Hey, are we still on for coffee tomorrow at 10? Let me know ",0.0,0.0,Safe,Safe,True,1.2
+rendered,"Thanks for sending over the notes from yesterday's lecture, ",0.0,0.0,Safe,Safe,True,0.74
+rendered,Your Amazon order #404-1234567-8901234 has shipped and will ,0.0,0.0,Caution,Caution,True,0.69
+rendered,Your appointment with Dr. Lim is confirmed for 3 March at 2:,0.0,0.0,Safe,Safe,True,0.66
+rendered,Your monthly bank statement is ready to view in the app.,0.0,0.0,Safe,Safe,True,0.67
+rendered,New collection just dropped! Browse the latest arrivals at o,0.0,0.0,Caution,Caution,True,0.65
+rendered,Don't forget — your local library has a free reading event t,0.0,0.0,Safe,Safe,True,0.81
+rendered,Please review the attached report by end of week and share y,0.0,0.0,Safe,Safe,True,3.25
+rendered,The team meeting has been moved to 11am tomorrow. Calendar i,0.0,0.0,Safe,Safe,True,0.68
+rendered,Just a reminder that your gym membership payment is due next,0.0,0.0,Safe,Safe,True,0.74
+rendered,Your password to the office Wi-Fi has been updated. Please a,0.0,0.0,Safe,Safe,True,0.68

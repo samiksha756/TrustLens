@@ -1,0 +1,9 @@
+category,pressure
+account_lock,0.383
+benign,0.131
+benign_tricky,0.052
+brand_impersonation,0.532
+delivery_scam,0.083
+payment_pressure,0.138
+prize_lure,0.382
+tax_refund,0.258

@@ -1,0 +1,4 @@
+Temperature,Note,ECE,Brier
+1.0,raw (no scaling),0.0783,0.0772
+1.8,TrustLens default,0.0709,0.0668
+3.4,fitted on this set (in-sample),0.0767,0.0516
