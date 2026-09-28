@@ -76,6 +76,7 @@ INDEX_HTML = """
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
   <title>TrustLens — Multimodal Phishing &amp; Scam Risk Analyser</title>
+     <link rel="icon" href="data:,">
   <style>
     :root {
       --blue:#1e51c9; --blue-dark:#163c95; --ink:#1f2430; --muted:#5a6472;
