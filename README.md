@@ -1,6 +1,6 @@
 # TrustLens: A Multimodal AI System for Detecting and Explaining Phishing and Scam Attempts
 
-**Module:** CM3070 Final Project (University of London) · **Template:** CM3020 Artificial Intelligence, Project Idea 4.1: *Orchestrating AI models to achieve a goal*
+**Module:** CM3070 Final Project (University of London) · **Template:** CM3020 Artificial Intelligence, Project Idea 1: *Orchestrating AI models to achieve a goal*
 
 TrustLens helps non-specialist users check a suspicious **text message, screenshot or voice note**.
 Every input is reduced to text and passed through one shared pipeline that combines pre-trained
@@ -60,6 +60,20 @@ eval_inputs/voice/      references.csv for the recorded voice notes
 tests/                  pytest suite (11 tests)
 assets/                 Figures from the preliminary report
 ```
+
+## Download
+
+Clone the repository, or click **Code → Download ZIP** on GitHub and unzip it:
+
+```bash
+git clone https://github.com/samiksha756/TrustLens.git
+cd TrustLens
+```
+
+You need **Python 3.12** installed. The AI models download automatically the first time
+they are used: the two text models from Hugging Face (about 1.6 GB in total) on the first
+analysis, and Whisper base (about 140 MB) on the first voice note. An internet connection
+is needed for the first run only.
 
 ## Setup
 
