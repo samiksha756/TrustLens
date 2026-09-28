@@ -1,0 +1,16 @@
+# Python environment and caches
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# macOS
+.DS_Store
+
+# Personal data: raw form export and voice recordings
+user_study_responses.csv
+*Form Responses*.csv
+eval_inputs/voice/*.m4a
+eval_inputs/voice/*.wav
+eval_inputs/voice/*.mp3
