@@ -1,0 +1,41 @@
+# TrustLens - Python dependencies
+# Tested on Python 3.12 (macOS, Intel x86_64).
+# Install:  pip install -r requirements.txt
+
+# --- Core: Model 1 (phishing classifier), Model 2 (emotion), backend ---
+transformers==4.41.2
+torch==2.2.2
+fastapi>=0.110.0
+uvicorn>=0.29.0
+pydantic>=2.0.0
+python-multipart>=0.0.9      # required by FastAPI for file uploads (image/audio)
+
+# --- Evaluation, figures and tests ---
+pandas>=2.0.0
+scikit-learn>=1.3.0
+pyarrow>=14.0.0
+matplotlib>=3.7.0            # report figures (make_figures.py)
+pytest>=8.0.0                # test suite (tests/test_trustlens.py)
+
+# --- Compatibility pins ---
+# torch 2.2.2 was built against NumPy 1.x and fails to import with NumPy 2,
+# so NumPy and the libraries that would otherwise pull in NumPy 2 are pinned.
+numpy<2
+scipy<1.14
+contourpy<1.4
+
+# --- Model 3: OCR (image space) ---
+# Also needs the system 'tesseract' binary (see README).
+pytesseract>=0.3.10
+Pillow>=10.0.0
+
+# --- Model 4: Whisper speech-to-text (audio space) ---
+# Also needs the system 'ffmpeg' binary (see README).
+# numba/llvmlite are pinned to versions with prebuilt wheels for
+# Python 3.12, including Intel Macs (newer llvmlite must be compiled).
+openai-whisper
+numba==0.60.0
+llvmlite==0.43.0
+
+# NOTE: link_analysis.py, calibration.py, context_signals.py and
+# attribution.py use only the Python standard library and need no extra packages.

@@ -1,0 +1,26 @@
+text,category,true,pred,phishing_prob,indicators,score,level,correct
+Your PayPal account has been temporarily restricted due to suspicious activity. ...,account_lock,1,1,1.0,5,1.0,High Risk,True
+URGENT: We detected unauthorised access to your Microsoft account. Confirm your ...,account_lock,1,1,1.0,3,0.9125,High Risk,True
+Your Apple ID has been locked. Re-enter your password here to unlock: http://app...,account_lock,1,1,1.0,2,0.825,High Risk,True
+Your recent payment of $429.99 has failed. Update your billing information immed...,payment_pressure,1,1,1.0,1,0.7375,Suspicious,True
+Final notice: Your unpaid invoice #INV-77321 is overdue. Wire transfer required ...,payment_pressure,1,1,0.9999,2,0.8249,High Risk,True
+Your tax refund of £540 is pending. Confirm your bank details urgently at hmrc-r...,tax_refund,1,1,1.0,2,0.825,High Risk,True
+CONGRATULATIONS! You have been selected to receive a $1000 Amazon gift card. Cli...,prize_lure,1,1,1.0,3,0.9125,High Risk,True
+You won a brand new iPhone 15 Pro! Claim now at free-iphone-winner.xyz,prize_lure,1,1,1.0,0,0.65,Suspicious,True
+Lucky winner! Your number was drawn in our monthly giveaway. Send your bank deta...,prize_lure,1,1,1.0,0,0.65,Suspicious,True
+Your DHL parcel could not be delivered. Pay the £2.99 redelivery fee at dhl-rede...,delivery_scam,1,1,1.0,1,0.7375,Suspicious,True
+FedEx: Your package is being held at customs. Confirm details at fedex-customs-c...,delivery_scam,1,1,0.9918,1,0.7322,Suspicious,True
+Netflix: Your subscription payment failed. Update your card now: http://netflix-...,brand_impersonation,1,1,1.0,2,0.825,High Risk,True
+Singpass alert: Suspicious login detected. Verify your identity at singpass-secu...,brand_impersonation,1,1,1.0,2,0.825,High Risk,True
+"Hi mum, just letting you know I'll be home for dinner tonight. See you at 7.",benign,0,0,0.0,0,0.0,Safe,True
+"Hey, are we still on for coffee tomorrow at 10? Let me know if you need to resch...",benign,0,0,0.0,0,0.0,Safe,True
+"Thanks for sending over the notes from yesterday's lecture, really appreciate it...",benign,0,0,0.0,0,0.0,Safe,True
+Your Amazon order #404-1234567-8901234 has shipped and will arrive on Friday.,benign,0,1,0.9956,1,0.7346,Suspicious,False
+Your appointment with Dr. Lim is confirmed for 3 March at 2:30 PM.,benign,0,0,0.0,0,0.0,Safe,True
+Your monthly bank statement is ready to view in the app.,benign,0,0,0.0002,0,0.0001,Safe,True
+New collection just dropped! Browse the latest arrivals at our store this weeken...,benign,0,1,0.9685,0,0.6295,Suspicious,False
+Don't forget — your local library has a free reading event this Saturday.,benign,0,0,0.0004,0,0.0003,Safe,True
+Please review the attached report by end of week and share your feedback.,benign,0,0,0.0,0,0.0,Safe,True
+The team meeting has been moved to 11am tomorrow. Calendar invite to follow.,benign,0,0,0.0,0,0.0,Safe,True
+Just a reminder that your gym membership payment is due next week. You can manag...,benign_tricky,0,0,0.0,0,0.0,Safe,True
+Your password to the office Wi-Fi has been updated. Please ask IT if you need th...,benign_tricky,0,0,0.0,0,0.0,Safe,True
